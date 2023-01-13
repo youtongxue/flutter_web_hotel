@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/widgets.dart';
 
 class DioUtils {
-  //static const String BASE_URL = "http://localhost:8096/hotel"; //base url
+  //static const String BASE_URL = "http://localhost:8196/hotel"; //base url
   static const String BASE_URL = "https://singlestep.cn/hotel"; //base url
   static late DioUtils _instance;
   late Dio _dio;

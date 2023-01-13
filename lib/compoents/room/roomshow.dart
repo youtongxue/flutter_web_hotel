@@ -131,7 +131,7 @@ class _RoomShowWidgetState extends State<RoomShowWidget> {
                         onPressed: () {
                           DatePicker.showDatePicker(context,
                               showTitleActions: true,
-                              minTime: DateTime(2023, 1, 1),
+                              minTime: DateTime.now(),
                               maxTime: DateTime(2023, 12, 31),
                               onConfirm: (date) {
                             print('选择时间为： $date');

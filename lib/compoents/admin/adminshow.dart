@@ -213,20 +213,23 @@ class _AdminShowWidgetState extends State<AdminShowWidget> {
                   Text(listAdmin[index].adminName.toString()),
                   Text(listAdmin[index].password.toString()),
                   Text(listAdmin[index].createDate.toString()),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(4)),
-                      ),
-                      backgroundColor: MaterialStateProperty.all(Colors.blue),
-                    ),
-                    onPressed: () {
-                      print("删除管理员");
-                      delByNoticeId(listAdmin[index].adminId);
-                    },
-                    child: const Text("删除"),
-                  ),
+                  listAdmin[index].adminName.toString() != "super"
+                      ? ElevatedButton(
+                          style: ButtonStyle(
+                            shape: MaterialStateProperty.all(
+                              RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(4)),
+                            ),
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.blue),
+                          ),
+                          onPressed: () {
+                            print("删除管理员");
+                            delByNoticeId(listAdmin[index].adminId);
+                          },
+                          child: const Text("删除"),
+                        )
+                      : const SizedBox(),
                 ],
               ),
             );

@@ -151,13 +151,13 @@ class _PersonWorkOrderState extends State<PersonWorkOrder> {
   Widget noticeInfo() {
     return Row(
       children: const [
-        Padding(padding: EdgeInsets.only(left: 100)),
-        Text("用户名"),
-        Padding(padding: EdgeInsets.only(left: 236)),
+        Padding(padding: EdgeInsets.only(left: 180)),
         Text("内容"),
-        Padding(padding: EdgeInsets.only(left: 300)),
+        Padding(padding: EdgeInsets.only(left: 360)),
+        Text("工单状态"),
+        Padding(padding: EdgeInsets.only(left: 320)),
         Text("发布时间"),
-        Padding(padding: EdgeInsets.only(left: 18)),
+        Padding(padding: EdgeInsets.only(left: 2)),
       ],
     );
   }

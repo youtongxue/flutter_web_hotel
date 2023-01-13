@@ -74,7 +74,7 @@ class _PersonOrderState extends State<PersonOrder> {
     }
     return Container(
       padding: const EdgeInsets.only(left: 40),
-      color: Colors.amber,
+      color: Colors.white,
       child: Column(
         children: [
           const Padding(padding: EdgeInsets.only(left: 100, top: 50)),

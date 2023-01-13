@@ -142,11 +142,11 @@ class _PersonAppraiseState extends State<PersonAppraise> {
   Widget noticeInfo() {
     return Row(
       children: const [
-        Padding(padding: EdgeInsets.only(left: 100)),
+        Padding(padding: EdgeInsets.only(left: 160)),
         Text("用户名"),
-        Padding(padding: EdgeInsets.only(left: 236)),
+        Padding(padding: EdgeInsets.only(left: 360)),
         Text("内容"),
-        Padding(padding: EdgeInsets.only(left: 300)),
+        Padding(padding: EdgeInsets.only(left: 380)),
         Text("发布时间"),
         Padding(padding: EdgeInsets.only(left: 18)),
       ],
