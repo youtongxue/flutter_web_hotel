@@ -126,10 +126,10 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          color: Colors.red,
+          color: Colors.white,
           image: DecorationImage(
             //设置登录背景图片
-            image: AssetImage('images/login.png'),
+            image: AssetImage('images/login.jpeg'),
             fit: BoxFit.cover, // 完全填充
           ),
         ),
